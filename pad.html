@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadStart-End</title>
+</head>
+<body>
+    <div id="home">Home : </div>
+    <div id="office">Office : </div>
+    <Script>
+        let mystring = '8320708591';
+
+        let p = mystring.slice(8,10);
+
+        let q = p.padStart(10,"*")
+
+        document.getElementById("home").innerHTML += q;
+    
+
+
+        let mystring1 = '9898150783';
+
+        let a = mystring1.slice(0,2);
+
+        let b = a.padEnd(10,"*")
+
+        document.getElementById("office").innerHTML += b;
+    </Script>
+</body>
+</html>
